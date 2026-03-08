@@ -1,4 +1,4 @@
-# @jm/node-instrumentation
+# @julianm-lrj/node-instrumentation
 
 Production-focused OpenTelemetry instrumentation helpers for Node services.
 
@@ -13,13 +13,13 @@ Production-focused OpenTelemetry instrumentation helpers for Node services.
 ## Install
 
 ```bash
-npm install @jm/node-instrumentation
+npm install @julianm-lrj/node-instrumentation
 ```
 
 ## Start OpenTelemetry
 
 ```ts
-import { startTelemetry } from "@jm/node-instrumentation";
+import { startTelemetry } from "@julianm-lrj/node-instrumentation";
 
 const telemetry = startTelemetry({
   serviceName: "payments-api",
@@ -38,7 +38,7 @@ import express from "express";
 import {
   createExpressInstrumentationMiddleware,
   startTelemetry
-} from "@jm/node-instrumentation";
+} from "@julianm-lrj/node-instrumentation";
 
 startTelemetry({ serviceName: "express-api" });
 
@@ -52,7 +52,7 @@ app.use(createExpressInstrumentationMiddleware());
 
 ```ts
 import { createApp, createRouter, eventHandler, readBody, toNodeListener } from "h3";
-import { instrumentH3Handler, startTelemetry } from "@jm/node-instrumentation";
+import { instrumentH3Handler, startTelemetry } from "@julianm-lrj/node-instrumentation";
 
 startTelemetry({ serviceName: "h3-api" });
 
