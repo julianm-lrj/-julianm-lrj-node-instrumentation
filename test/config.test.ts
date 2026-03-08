@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { resolveConfig } from "../src/config.js";
@@ -44,4 +45,20 @@ test("resolveConfig env setting overrides allow-insecure CLI flag", () => {
   );
 
   assert.equal(config.requireOtlpTls, true);
+});
+
+test("resolveConfig falls back to nearest package.json version", () => {
+  const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")) as {
+    version?: unknown;
+  };
+
+  assert.equal(typeof packageJson.version, "string");
+
+  const config = resolveConfig({}, {});
+  assert.equal(config.serviceVersion, packageJson.version);
+});
+
+test("resolveConfig honors npm_package_version over package.json fallback", () => {
+  const config = resolveConfig({}, { npm_package_version: "9.9.9" });
+  assert.equal(config.serviceVersion, "9.9.9");
 });
