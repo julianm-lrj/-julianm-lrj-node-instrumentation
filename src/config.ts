@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { dirname, join, parse } from "node:path";
 import process from "node:process";
 
 export const DEFAULT_ALLOWED_BODY_TYPES = [
@@ -56,6 +58,33 @@ export interface InstrumentationConfig {
 }
 
 const ALLOW_INSECURE_OTLP_FLAG = "--allow-insecure-otlp";
+
+function resolveNearestPackageVersion(startDir: string): string | undefined {
+  let currentDir = startDir;
+  const filesystemRoot = parse(startDir).root;
+
+  while (true) {
+    const packageJsonPath = join(currentDir, "package.json");
+
+    try {
+      const parsed = JSON.parse(readFileSync(packageJsonPath, "utf8")) as {
+        version?: unknown;
+      };
+
+      if (typeof parsed.version === "string" && parsed.version.trim() !== "") {
+        return parsed.version.trim();
+      }
+    } catch {
+      // Keep walking up; missing/unreadable/invalid package.json should not break startup.
+    }
+
+    if (currentDir === filesystemRoot) {
+      return undefined;
+    }
+
+    currentDir = dirname(currentDir);
+  }
+}
 
 function parseBoolean(value: string | undefined, fallback: boolean): boolean {
   if (value == null) {
@@ -167,6 +196,8 @@ export function resolveConfig(
   env: NodeJS.ProcessEnv = process.env,
   argv: string[] = process.argv
 ): InstrumentationConfig {
+  const packageVersion = resolveNearestPackageVersion(process.cwd());
+
   const allowedBodyTypes = normalizeStringList(
     overrides.allowedBodyTypes ?? parseCsv(env.INSTRUMENTATION_ALLOWED_BODY_TYPES, DEFAULT_ALLOWED_BODY_TYPES)
   );
@@ -198,7 +229,12 @@ export function resolveConfig(
 
   return {
     serviceName: overrides.serviceName ?? env.OTEL_SERVICE_NAME ?? "node-instrumentation",
-    serviceVersion: overrides.serviceVersion ?? env.OTEL_SERVICE_VERSION ?? env.npm_package_version ?? "0.0.0",
+    serviceVersion:
+      overrides.serviceVersion ??
+      env.OTEL_SERVICE_VERSION ??
+      env.npm_package_version ??
+      packageVersion ??
+      "0.0.0",
     deploymentEnvironment: overrides.deploymentEnvironment ?? env.OTEL_DEPLOYMENT_ENVIRONMENT ?? env.NODE_ENV ?? "production",
     captureHeaders: overrides.captureHeaders ?? parseBoolean(env.INSTRUMENTATION_CAPTURE_HEADERS, true),
     captureRequestBody:
