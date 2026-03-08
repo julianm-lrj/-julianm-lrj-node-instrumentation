@@ -9,6 +9,7 @@ Production-focused OpenTelemetry instrumentation helpers for Node services.
 - h3 handler wrapper with equivalent telemetry behavior.
 - Capture-all-except-denylist headers, content-type body filtering, recursive redaction, and truncation markers.
 - Environment-driven sampling and capture controls.
+- `service.version` defaults to the nearest `package.json` version (or env overrides).
 
 ## Install
 
