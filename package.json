@@ -1,0 +1,58 @@
+{
+  "name": "@julianm-lrj/node-instrumentation",
+  "version": "0.1.0",
+  "description": "Production-focused OpenTelemetry instrumentation helpers for Node, Express, and h3.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test test/**/*.test.ts",
+    "licenses:generate": "node licence/generate-third-party-license-report.mjs"
+  },
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "peerDependencies": {
+    "express": ">=4",
+    "h3": ">=1"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "h3": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@opentelemetry/api": "latest",
+    "@opentelemetry/api-logs": "latest",
+    "@opentelemetry/context-async-hooks": "latest",
+    "@opentelemetry/core": "latest",
+    "@opentelemetry/exporter-logs-otlp-http": "latest",
+    "@opentelemetry/exporter-metrics-otlp-http": "latest",
+    "@opentelemetry/exporter-trace-otlp-http": "latest",
+    "@opentelemetry/resources": "latest",
+    "@opentelemetry/sdk-logs": "latest",
+    "@opentelemetry/sdk-metrics": "latest",
+    "@opentelemetry/sdk-trace-base": "latest",
+    "@opentelemetry/sdk-trace-node": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest",
+    "typescript": "latest",
+    "tsx": "latest"
+  }
+}
