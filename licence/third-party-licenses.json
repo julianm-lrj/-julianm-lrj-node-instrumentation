@@ -1,0 +1,1622 @@
+{
+  "generatedAt": "2026-03-08T18:10:22.542Z",
+  "packageCount": 70,
+  "licenses": {
+    "MIT": 42,
+    "Apache-2.0": 17,
+    "BSD-3-Clause": 11
+  },
+  "criteriaByLicense": {
+    "Apache-2.0": [
+      "Include a copy of the Apache License 2.0 in redistributions.",
+      "Preserve copyright, attribution, and license notices.",
+      "Preserve NOTICE file content when present.",
+      "Mark modified files with prominent change notices.",
+      "Be aware of patent termination on patent litigation."
+    ],
+    "MIT": [
+      "Include the MIT copyright notice.",
+      "Include the MIT permission notice/license text in redistributions.",
+      "No copyleft requirement; derivative works can be differently licensed."
+    ],
+    "BSD-3-Clause": [
+      "Retain copyright notice, license conditions, and disclaimer in source.",
+      "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+      "Do not use contributor names to endorse/promote derivatives without prior permission."
+    ]
+  },
+  "packages": [
+    {
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/aix-ppc64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.27.3.tgz",
+        "integrity": "sha512-9fJMTNFTWZMh5qwrBItuziu834eOCUcEqymSH7pY+zoMVEZg3gcPuBNxH1EvfVYe9h0x/Ptw8KBzv7qxb7l8dg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/android-arm",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/android-arm",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.27.3.tgz",
+        "integrity": "sha512-i5D1hPY7GIQmXlXhs2w8AWHhenb00+GxjxRncS2ZM7YNVGNfaMxgzSGuO8o8SJzRc/oZwU2bcScvVERk03QhzA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/android-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/android-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.27.3.tgz",
+        "integrity": "sha512-YdghPYUmj/FX2SYKJ0OZxf+iaKgMsKHVPF1MAq/P8WirnSpCStzKJFjOjzsW0QQ7oIAiccHdcqjbHmJxRb/dmg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/android-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/android-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.27.3.tgz",
+        "integrity": "sha512-IN/0BNTkHtk8lkOM8JWAYFg4ORxBkZQf9zXiEOfERX/CzxW3Vg1ewAhU7QSWQpVIzTW+b8Xy+lGzdYXV6UZObQ=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "The macOS ARM 64-bit binary for esbuild, a JavaScript bundler.",
+      "homepage": "",
+      "repository": "git+https://github.com/evanw/esbuild.git",
+      "source": "git+https://github.com/evanw/esbuild.git",
+      "packagePath": "node_modules/@esbuild/darwin-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.3.tgz",
+        "integrity": "sha512-Re491k7ByTVRy0t3EKWajdLIr0gz2kKKfzafkth4Q8A5n1xTHrkqZgLLjFEHVD+AXdUGgQMq+Godfq45mGpCKg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/darwin-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/darwin-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.27.3.tgz",
+        "integrity": "sha512-vHk/hA7/1AckjGzRqi6wbo+jaShzRowYip6rt6q7VYEDX4LEy1pZfDpdxCBnGtl+A5zq8iXDcyuxwtv3hNtHFg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/freebsd-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.27.3.tgz",
+        "integrity": "sha512-ipTYM2fjt3kQAYOvo6vcxJx3nBYAzPjgTCk7QEgZG8AUO3ydUhvelmhrbOheMnGOlaSFUoHXB6un+A7q4ygY9w=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/freebsd-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.27.3.tgz",
+        "integrity": "sha512-dDk0X87T7mI6U3K9VjWtHOXqwAMJBNN2r7bejDsc+j03SEjtD9HrOl8gVFByeM0aJksoUuUVU9TBaZa2rgj0oA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-arm",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-arm",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.27.3.tgz",
+        "integrity": "sha512-s6nPv2QkSupJwLYyfS+gwdirm0ukyTFNl3KTgZEAiJDd+iHZcbTPPcWCcRYH+WlNbwChgH2QkE9NSlNrMT8Gfw=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.27.3.tgz",
+        "integrity": "sha512-sZOuFz/xWnZ4KH3YfFrKCf1WyPZHakVzTiqji3WDc0BCl2kBwiJLCXpzLzUBLgmp4veFZdvN5ChW4Eq/8Fc2Fg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-ia32",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-ia32",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.27.3.tgz",
+        "integrity": "sha512-yGlQYjdxtLdh0a3jHjuwOrxQjOZYD/C9PfdbgJJF3TIZWnm/tMd/RcNiLngiu4iwcBAOezdnSLAwQDPqTmtTYg=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-loong64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-loong64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.27.3.tgz",
+        "integrity": "sha512-WO60Sn8ly3gtzhyjATDgieJNet/KqsDlX5nRC5Y3oTFcS1l0KWba+SEa9Ja1GfDqSF1z6hif/SkpQJbL63cgOA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-mips64el",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.27.3.tgz",
+        "integrity": "sha512-APsymYA6sGcZ4pD6k+UxbDjOFSvPWyZhjaiPyl/f79xKxwTnrn5QUnXR5prvetuaSMsb4jgeHewIDCIWljrSxw=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-ppc64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.27.3.tgz",
+        "integrity": "sha512-eizBnTeBefojtDb9nSh4vvVQ3V9Qf9Df01PfawPcRzJH4gFSgrObw+LveUyDoKU3kxi5+9RJTCWlj4FjYXVPEA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-riscv64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.27.3.tgz",
+        "integrity": "sha512-3Emwh0r5wmfm3ssTWRQSyVhbOHvqegUDRd0WhmXKX2mkHJe1SFCMJhagUleMq+Uci34wLSipf8Lagt4LlpRFWQ=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-s390x",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-s390x",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.27.3.tgz",
+        "integrity": "sha512-pBHUx9LzXWBc7MFIEEL0yD/ZVtNgLytvx60gES28GcWMqil8ElCYR4kvbV2BDqsHOvVDRrOxGySBM9Fcv744hw=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/linux-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/linux-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.27.3.tgz",
+        "integrity": "sha512-Czi8yzXUWIQYAtL/2y6vogER8pvcsOsk5cpwL4Gk5nJqH5UZiVByIY8Eorm5R13gq+DQKYg0+JyQoytLQas4dA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/netbsd-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.27.3.tgz",
+        "integrity": "sha512-sDpk0RgmTCR/5HguIZa9n9u+HVKf40fbEUt+iTzSnCaGvY9kFP0YKBWZtJaraonFnqef5SlJ8/TiPAxzyS+UoA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/netbsd-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.27.3.tgz",
+        "integrity": "sha512-P14lFKJl/DdaE00LItAukUdZO5iqNH7+PjoBm+fLQjtxfcfFE20Xf5CrLsmZdq5LFFZzb5JMZ9grUwvtVYzjiA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/openbsd-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.27.3.tgz",
+        "integrity": "sha512-AIcMP77AvirGbRl/UZFTq5hjXK+2wC7qFRGoHSDrZ5v5b8DK/GYpXW3CPRL53NkvDqb9D+alBiC/dV0Fb7eJcw=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/openbsd-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.27.3.tgz",
+        "integrity": "sha512-DnW2sRrBzA+YnE70LKqnM3P+z8vehfJWHXECbwBmH/CU51z6FiqTQTHFenPlHmo3a8UgpLyH3PT+87OViOh1AQ=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/openharmony-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.27.3.tgz",
+        "integrity": "sha512-NinAEgr/etERPTsZJ7aEZQvvg/A6IsZG/LgZy+81wON2huV7SrK3e63dU0XhyZP4RKGyTm7aOgmQk0bGp0fy2g=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/sunos-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/sunos-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.27.3.tgz",
+        "integrity": "sha512-PanZ+nEz+eWoBJ8/f8HKxTTD172SKwdXebZ0ndd953gt1HRBbhMsaNqjTyYLGLPdoWHy4zLU7bDVJztF5f3BHA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/win32-arm64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/win32-arm64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.27.3.tgz",
+        "integrity": "sha512-B2t59lWWYrbRDw/tjiWOuzSsFh1Y/E95ofKz7rIVYSQkUYBjfSgf6oeYPNWHToFRr2zx52JKApIcAS/D5TUBnA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/win32-ia32",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/win32-ia32",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.27.3.tgz",
+        "integrity": "sha512-QLKSFeXNS8+tHW7tZpMtjlNb7HKau0QDpwm49u0vUp9y1WOF+PEzkU84y9GqYaAVW8aH8f3GcBck26jh54cX4Q=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@esbuild/win32-x64",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "",
+      "homepage": "",
+      "repository": "",
+      "source": "",
+      "packagePath": "node_modules/@esbuild/win32-x64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.3.tgz",
+        "integrity": "sha512-4uJGhsxuptu3OcpVAzli+/gWusVGwZZHTlS63hh++ehExkVT8SgiEf7/uC/PclrPPkLhZqGgCTjd0VWLo6xMqA=="
+      },
+      "licenseFiles": [],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@opentelemetry/api",
+      "version": "1.9.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "Public API for OpenTelemetry",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/api",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/api",
+      "packagePath": "node_modules/@opentelemetry/api",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/api/-/api-1.9.0.tgz",
+        "integrity": "sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/api/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/api-logs",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "Public logs API for OpenTelemetry",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/api-logs",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/api-logs",
+      "packagePath": "node_modules/@opentelemetry/api-logs",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/api-logs/-/api-logs-0.213.0.tgz",
+        "integrity": "sha512-zRM5/Qj6G84Ej3F1yt33xBVY/3tnMxtL1fiDIxYbDWYaZ/eudVw3/PBiZ8G7JwUxXxjW8gU4g6LnOyfGKYHYgw=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/api-logs/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/context-async-hooks",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry AsyncLocalStorage-based Context Manager",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-context-async-hooks",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-context-async-hooks",
+      "packagePath": "node_modules/@opentelemetry/context-async-hooks",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/context-async-hooks/-/context-async-hooks-2.6.0.tgz",
+        "integrity": "sha512-L8UyDwqpTcbkIK5cgwDRDYDoEhQoj8wp8BwsO19w3LB1Z41yEQm2VJyNfAi9DrLP/YTqXqWpKHyZfR9/tFYo1Q=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/context-async-hooks/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/core",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Core provides constants and utilities shared by all OpenTelemetry SDK packages.",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-core",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-core",
+      "packagePath": "node_modules/@opentelemetry/core",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/core/-/core-2.6.0.tgz",
+        "integrity": "sha512-HLM1v2cbZ4TgYN6KEOj+Bbj8rAKriOdkF9Ed3tG25FoprSiQl7kYc+RRT6fUZGOvx0oMi5U67GoFdT+XUn8zEg=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/core/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-logs-otlp-http",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Collector Logs Exporter allows user to send collected logs to the OpenTelemetry Collector",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-http",
+      "repository": "git+https://github.com/open-telemetry/opentelemetry-js.git",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-http",
+      "packagePath": "node_modules/@opentelemetry/exporter-logs-otlp-http",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/exporter-logs-otlp-http/-/exporter-logs-otlp-http-0.213.0.tgz",
+        "integrity": "sha512-vqDVSpLp09ZzcFIdb7QZrEFPxUlO3GzdhBKLstq3jhYB5ow3+ZtV5V0ngSdi/0BZs+J5WPiN1+UDV4X5zD/GzA=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/exporter-logs-otlp-http/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-metrics-otlp-http",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Collector Metrics Exporter allows user to send collected metrics to the OpenTelemetry Collector",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-http",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-http",
+      "packagePath": "node_modules/@opentelemetry/exporter-metrics-otlp-http",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/exporter-metrics-otlp-http/-/exporter-metrics-otlp-http-0.213.0.tgz",
+        "integrity": "sha512-yw3fTIw4KQIRXC/ZyYQq5gtA3Ogfdfz/g5HVgleobQAcjUUE8Nj3spGMx8iQPp+S+u6/js7BixufRkXhzLmpJA=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/exporter-metrics-otlp-http/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-trace-otlp-http",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Collector Trace Exporter allows user to send collected traces to the OpenTelemetry Collector",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-http",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-http",
+      "packagePath": "node_modules/@opentelemetry/exporter-trace-otlp-http",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/exporter-trace-otlp-http/-/exporter-trace-otlp-http-0.213.0.tgz",
+        "integrity": "sha512-tnRmJD39aWrE/Sp7F6AbRNAjKHToDkAqBi6i0lESpGWz3G+f4bhVAV6mgSXH2o18lrDVJXo6jf9bAywQw43wRA=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/exporter-trace-otlp-http/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/otlp-exporter-base",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "transitive-prod",
+      "description": "OpenTelemetry OTLP Exporter base (for internal use only)",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/otlp-exporter-base",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/otlp-exporter-base",
+      "packagePath": "node_modules/@opentelemetry/otlp-exporter-base",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/otlp-exporter-base/-/otlp-exporter-base-0.213.0.tgz",
+        "integrity": "sha512-MegxAP1/n09Ob2dQvY5NBDVjAFkZRuKtWKxYev1R2M8hrsgXzQGkaMgoEKeUOyQ0FUyYcO29UOnYdQWmWa0PXg=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/otlp-exporter-base/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/otlp-transformer",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "transitive-prod",
+      "description": "Transform OpenTelemetry SDK data into OTLP",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/otlp-transformer",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/otlp-transformer",
+      "packagePath": "node_modules/@opentelemetry/otlp-transformer",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/otlp-transformer/-/otlp-transformer-0.213.0.tgz",
+        "integrity": "sha512-RSuAlxFFPjeK4d5Y6ps8L2WhaQI6CXWllIjvo5nkAlBpmq2XdYWEBGiAbOF4nDs8CX4QblJDv5BbMUft3sEfDw=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/otlp-transformer/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/resources",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry SDK resources",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-resources",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-resources",
+      "packagePath": "node_modules/@opentelemetry/resources",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/resources/-/resources-2.6.0.tgz",
+        "integrity": "sha512-D4y/+OGe3JSuYUCBxtH5T9DSAWNcvCb/nQWIga8HNtXTVPQn59j0nTBAgaAXxUVBDl40mG3Tc76b46wPlZaiJQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/resources/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-logs",
+      "version": "0.213.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry logs SDK",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/sdk-logs",
+      "repository": "git+https://github.com/open-telemetry/opentelemetry-js.git",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/sdk-logs",
+      "packagePath": "node_modules/@opentelemetry/sdk-logs",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/sdk-logs/-/sdk-logs-0.213.0.tgz",
+        "integrity": "sha512-00xlU3GZXo3kXKve4DLdrAL0NAFUaZ9appU/mn00S/5kSUdAvyYsORaDUfR04Mp2CLagAOhrzfUvYozY/EZX2g=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/sdk-logs/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-metrics",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry metrics SDK",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/sdk-metrics",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/sdk-metrics",
+      "packagePath": "node_modules/@opentelemetry/sdk-metrics",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/sdk-metrics/-/sdk-metrics-2.6.0.tgz",
+        "integrity": "sha512-CicxWZxX6z35HR83jl+PLgtFgUrKRQ9LCXyxgenMnz5A1lgYWfAog7VtdOvGkJYyQgMNPhXQwkYrDLujk7z1Iw=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/sdk-metrics/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-trace-base",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Tracing",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-base",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-base",
+      "packagePath": "node_modules/@opentelemetry/sdk-trace-base",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/sdk-trace-base/-/sdk-trace-base-2.6.0.tgz",
+        "integrity": "sha512-g/OZVkqlxllgFM7qMKqbPV9c1DUPhQ7d4n3pgZFcrnrNft9eJXZM2TNHTPYREJBrtNdRytYyvwjgL5geDKl3EQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/sdk-trace-base/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-trace-node",
+      "version": "2.6.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-prod",
+      "description": "OpenTelemetry Node SDK provides automatic telemetry (tracing, metrics, etc) for Node.js applications",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-node",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-node",
+      "packagePath": "node_modules/@opentelemetry/sdk-trace-node",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/sdk-trace-node/-/sdk-trace-node-2.6.0.tgz",
+        "integrity": "sha512-YhswtasmsbIGEFvLGvR9p/y3PVRTfFf+mgY8van4Ygpnv4sA3vooAjvh+qAn9PNWxs4/IwGGqiQS0PPsaRJ0vQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/sdk-trace-node/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@opentelemetry/semantic-conventions",
+      "version": "1.40.0",
+      "license": "Apache-2.0",
+      "dependencyKind": "transitive-prod",
+      "description": "OpenTelemetry semantic conventions",
+      "homepage": "https://github.com/open-telemetry/opentelemetry-js/tree/main/semantic-conventions",
+      "repository": "open-telemetry/opentelemetry-js",
+      "source": "https://github.com/open-telemetry/opentelemetry-js/tree/main/semantic-conventions",
+      "packagePath": "node_modules/@opentelemetry/semantic-conventions",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@opentelemetry/semantic-conventions/-/semantic-conventions-1.40.0.tgz",
+        "integrity": "sha512-cifvXDhcqMwwTlTK04GBNeIe7yyo28Mfby85QXFe1Yk8nmi36Ab/5UQwptOx84SsoGNRg+EVSjwzfSZMy6pmlw=="
+      },
+      "licenseFiles": [
+        "node_modules/@opentelemetry/semantic-conventions/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "@protobufjs/aspromise",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "Returns a promise from a node-style callback function.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/aspromise",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/aspromise/-/aspromise-1.1.2.tgz",
+        "integrity": "sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/aspromise/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/base64",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A minimal base64 implementation for number arrays.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/base64",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/base64/-/base64-1.1.2.tgz",
+        "integrity": "sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/base64/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/codegen",
+      "version": "2.0.4",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A minimalistic code generation utility.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/codegen",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/codegen/-/codegen-2.0.4.tgz",
+        "integrity": "sha512-YyFaikqM5sH0ziFZCN3xDC7zeGaB/d0IUb9CATugHWbd1FRFwWwt4ld4OYMPWu5a3Xe01mGAULCdqhMlPl29Jg=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/codegen/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/eventemitter",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A minimal event emitter.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/eventemitter",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz",
+        "integrity": "sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/eventemitter/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/fetch",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "Fetches the contents of a file accross node and browsers.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/fetch",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/fetch/-/fetch-1.1.0.tgz",
+        "integrity": "sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/fetch/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/float",
+      "version": "1.0.2",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "Reads / writes floats / doubles from / to buffers in both modern and ancient browsers.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/float",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/float/-/float-1.0.2.tgz",
+        "integrity": "sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/float/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/inquire",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "Requires a module only if available and hides the require call from bundlers.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/inquire",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/inquire/-/inquire-1.1.0.tgz",
+        "integrity": "sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/inquire/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/path",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A minimal path module to resolve Unix, Windows and URL paths alike.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/path",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/path/-/path-1.1.2.tgz",
+        "integrity": "sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/path/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/pool",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A general purpose buffer pool.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/pool",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/pool/-/pool-1.1.0.tgz",
+        "integrity": "sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/pool/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@protobufjs/utf8",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "A minimal UTF8 implementation for number arrays.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/protobuf.js.git",
+      "source": "https://github.com/dcodeIO/protobuf.js.git",
+      "packagePath": "node_modules/@protobufjs/utf8",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz",
+        "integrity": "sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw=="
+      },
+      "licenseFiles": [
+        "node_modules/@protobufjs/utf8/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "@types/body-parser",
+      "version": "1.19.6",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for body-parser",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/body-parser",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/body-parser",
+      "packagePath": "node_modules/@types/body-parser",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz",
+        "integrity": "sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/body-parser/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/connect",
+      "version": "3.4.38",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for connect",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/connect",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/connect",
+      "packagePath": "node_modules/@types/connect",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz",
+        "integrity": "sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/connect/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/express",
+      "version": "5.0.6",
+      "license": "MIT",
+      "dependencyKind": "direct-dev",
+      "description": "TypeScript definitions for express",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express",
+      "packagePath": "node_modules/@types/express",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz",
+        "integrity": "sha512-sKYVuV7Sv9fbPIt/442koC7+IIwK5olP1KWeD88e/idgoJqDm3JV/YUiPwkoKK92ylff2MGxSz1CSjsXelx0YA=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/express/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/express-serve-static-core",
+      "version": "5.1.1",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for express-serve-static-core",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express-serve-static-core",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express-serve-static-core",
+      "packagePath": "node_modules/@types/express-serve-static-core",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.1.tgz",
+        "integrity": "sha512-v4zIMr/cX7/d2BpAEX3KNKL/JrT1s43s96lLvvdTmza1oEvDudCqK9aF/djc/SWgy8Yh0h30TZx5VpzqFCxk5A=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/express-serve-static-core/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/http-errors",
+      "version": "2.0.5",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for http-errors",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/http-errors",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/http-errors",
+      "packagePath": "node_modules/@types/http-errors",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz",
+        "integrity": "sha512-r8Tayk8HJnX0FztbZN7oVqGccWgw98T/0neJphO91KkmOzug1KkofZURD4UaD5uH8AqcFLfdPErnBod0u71/qg=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/http-errors/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/node",
+      "version": "25.3.5",
+      "license": "MIT",
+      "dependencyKind": "transitive-prod",
+      "description": "TypeScript definitions for node",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+      "packagePath": "node_modules/@types/node",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/node/-/node-25.3.5.tgz",
+        "integrity": "sha512-oX8xrhvpiyRCQkG1MFchB09f+cXftgIXb3a7UUa4Y3wpmZPw5tyZGTLWhlESOLq1Rq6oDlc8npVU2/9xiCuXMA=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/node/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/qs",
+      "version": "6.15.0",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for qs",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/qs",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/qs",
+      "packagePath": "node_modules/@types/qs",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/qs/-/qs-6.15.0.tgz",
+        "integrity": "sha512-JawvT8iBVWpzTrz3EGw9BTQFg3BQNmwERdKE22vlTxawwtbyUSlMppvZYKLZzB5zgACXdXxbD3m1bXaMqP/9ow=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/qs/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/range-parser",
+      "version": "1.2.7",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for range-parser",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/range-parser",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/range-parser",
+      "packagePath": "node_modules/@types/range-parser",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz",
+        "integrity": "sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/range-parser/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/send",
+      "version": "1.2.1",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for send",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/send",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/send",
+      "packagePath": "node_modules/@types/send",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz",
+        "integrity": "sha512-arsCikDvlU99zl1g69TcAB3mzZPpxgw0UQnaHeC1Nwb015xp8bknZv5rIfri9xTOcMuaVgvabfIRA7PSZVuZIQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/send/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "@types/serve-static",
+      "version": "2.2.0",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "TypeScript definitions for serve-static",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/serve-static",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/serve-static",
+      "packagePath": "node_modules/@types/serve-static",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz",
+        "integrity": "sha512-8mam4H1NHLtu7nmtalF7eyBH14QyOASmcxHhSfEoRyr0nP/YdoesEtU+uSRvMe96TW/HPTtkoKqQLl53N7UXMQ=="
+      },
+      "licenseFiles": [
+        "node_modules/@types/serve-static/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "esbuild",
+      "version": "0.27.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "An extremely fast JavaScript and CSS bundler and minifier.",
+      "homepage": "",
+      "repository": "git+https://github.com/evanw/esbuild.git",
+      "source": "git+https://github.com/evanw/esbuild.git",
+      "packagePath": "node_modules/esbuild",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.27.3.tgz",
+        "integrity": "sha512-8VwMnyGCONIs6cWue2IdpHxHnAjzxnw2Zr7MkVxB2vjmQ2ivqGFb4LEG3SMnv0Gb2F/G/2yA8zUaiL1gywDCCg=="
+      },
+      "licenseFiles": [
+        "node_modules/esbuild/LICENSE.md"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev-optional",
+      "description": "Native Access to MacOS FSEvents",
+      "homepage": "https://github.com/fsevents/fsevents",
+      "repository": "https://github.com/fsevents/fsevents.git",
+      "source": "https://github.com/fsevents/fsevents",
+      "packagePath": "node_modules/fsevents",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+        "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="
+      },
+      "licenseFiles": [
+        "node_modules/fsevents/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "get-tsconfig",
+      "version": "4.13.6",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "Find and parse the tsconfig.json file from a directory path",
+      "homepage": "",
+      "repository": "privatenumber/get-tsconfig",
+      "source": "privatenumber/get-tsconfig",
+      "packagePath": "node_modules/get-tsconfig",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.6.tgz",
+        "integrity": "sha512-shZT/QMiSHc/YBLxxOkMtgSid5HFoauqCE3/exfsEcwg1WkeqjG+V40yBbBrsD+jW2HDXcs28xOfcbm2jI8Ddw=="
+      },
+      "licenseFiles": [
+        "node_modules/get-tsconfig/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "long",
+      "version": "5.3.2",
+      "license": "Apache-2.0",
+      "dependencyKind": "transitive-prod",
+      "description": "A Long class for representing a 64-bit two's-complement integer value.",
+      "homepage": "",
+      "repository": "https://github.com/dcodeIO/long.js.git",
+      "source": "https://github.com/dcodeIO/long.js.git",
+      "packagePath": "node_modules/long",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/long/-/long-5.3.2.tgz",
+        "integrity": "sha512-mNAgZ1GmyNhD7AuqnTG3/VQ26o760+ZYBPKjPvugO8+nLbYfX6TVpJPseBvopbdY+qpZ/lKUnmEc1LeZYS3QAA=="
+      },
+      "licenseFiles": [
+        "node_modules/long/LICENSE"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "protobufjs",
+      "version": "7.5.4",
+      "license": "BSD-3-Clause",
+      "dependencyKind": "transitive-prod",
+      "description": "Protocol Buffers for JavaScript (& TypeScript).",
+      "homepage": "https://protobufjs.github.io/protobuf.js/",
+      "repository": "protobufjs/protobuf.js",
+      "source": "https://protobufjs.github.io/protobuf.js/",
+      "packagePath": "node_modules/protobufjs",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-7.5.4.tgz",
+        "integrity": "sha512-CvexbZtbov6jW2eXAvLukXjXUW1TzFaivC46BpWc/3BpcCysb5Vffu+B3XHMm8lVEuy2Mm4XGex8hBSg1yapPg=="
+      },
+      "licenseFiles": [
+        "node_modules/protobufjs/LICENSE"
+      ],
+      "criteria": [
+        "Retain copyright notice, license conditions, and disclaimer in source.",
+        "Reproduce copyright notice, conditions, and disclaimer in binary distribution docs/materials.",
+        "Do not use contributor names to endorse/promote derivatives without prior permission."
+      ]
+    },
+    {
+      "name": "resolve-pkg-maps",
+      "version": "1.0.0",
+      "license": "MIT",
+      "dependencyKind": "transitive-dev",
+      "description": "Resolve package.json exports & imports maps",
+      "homepage": "",
+      "repository": "privatenumber/resolve-pkg-maps",
+      "source": "privatenumber/resolve-pkg-maps",
+      "packagePath": "node_modules/resolve-pkg-maps",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz",
+        "integrity": "sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw=="
+      },
+      "licenseFiles": [
+        "node_modules/resolve-pkg-maps/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "tsx",
+      "version": "4.21.0",
+      "license": "MIT",
+      "dependencyKind": "direct-dev",
+      "description": "TypeScript Execute (tsx): Node.js enhanced with esbuild to run TypeScript & ESM files",
+      "homepage": "https://tsx.is",
+      "repository": "privatenumber/tsx",
+      "source": "https://tsx.is",
+      "packagePath": "node_modules/tsx",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz",
+        "integrity": "sha512-5C1sg4USs1lfG0GFb2RLXsdpXqBSEhAaA/0kPL01wxzpMqLILNxIxIOKiILz+cdg/pLnOUxFYOR5yhHU666wbw=="
+      },
+      "licenseFiles": [
+        "node_modules/tsx/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "dependencyKind": "direct-dev",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "homepage": "https://www.typescriptlang.org/",
+      "repository": "https://github.com/microsoft/TypeScript.git",
+      "source": "https://www.typescriptlang.org/",
+      "packagePath": "node_modules/typescript",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+        "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="
+      },
+      "licenseFiles": [
+        "node_modules/typescript/LICENSE.txt"
+      ],
+      "criteria": [
+        "Include a copy of the Apache License 2.0 in redistributions.",
+        "Preserve copyright, attribution, and license notices.",
+        "Preserve NOTICE file content when present.",
+        "Mark modified files with prominent change notices.",
+        "Be aware of patent termination on patent litigation."
+      ]
+    },
+    {
+      "name": "undici-types",
+      "version": "7.18.2",
+      "license": "MIT",
+      "dependencyKind": "transitive-prod",
+      "description": "A stand-alone types package for Undici",
+      "homepage": "https://undici.nodejs.org",
+      "repository": "git+https://github.com/nodejs/undici.git",
+      "source": "https://undici.nodejs.org",
+      "packagePath": "node_modules/undici-types",
+      "lockfile": {
+        "resolved": "https://registry.npmjs.org/undici-types/-/undici-types-7.18.2.tgz",
+        "integrity": "sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w=="
+      },
+      "licenseFiles": [
+        "node_modules/undici-types/LICENSE"
+      ],
+      "criteria": [
+        "Include the MIT copyright notice.",
+        "Include the MIT permission notice/license text in redistributions.",
+        "No copyleft requirement; derivative works can be differently licensed."
+      ]
+    }
+  ]
+}
