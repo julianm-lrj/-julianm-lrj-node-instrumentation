@@ -23,9 +23,9 @@ import {
   serializeAsAttribute
 } from "./redaction.js";
 
-const tracer = trace.getTracer("@jm/node-instrumentation", "0.1.0");
-const meter = metrics.getMeter("@jm/node-instrumentation", "0.1.0");
-const logger = logs.getLogger("@jm/node-instrumentation", "0.1.0");
+const tracer = trace.getTracer("@julianm-lrj/node-instrumentation", "0.1.0");
+const meter = metrics.getMeter("@julianm-lrj/node-instrumentation", "0.1.0");
+const logger = logs.getLogger("@julianm-lrj/node-instrumentation", "0.1.0");
 
 const requestCount = meter.createCounter("http.server.request.count", {
   description: "Total HTTP server requests"

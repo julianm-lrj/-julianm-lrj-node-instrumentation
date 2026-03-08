@@ -40,9 +40,9 @@ export type H3LikeHandler<TResult = unknown, TEvent extends H3LikeEvent = H3Like
   event: TEvent
 ) => Promise<TResult> | TResult;
 
-const tracer = trace.getTracer("@jm/node-instrumentation", "0.1.0");
-const meter = metrics.getMeter("@jm/node-instrumentation", "0.1.0");
-const logger = logs.getLogger("@jm/node-instrumentation", "0.1.0");
+const tracer = trace.getTracer("@julianm-lrj/node-instrumentation", "0.1.0");
+const meter = metrics.getMeter("@julianm-lrj/node-instrumentation", "0.1.0");
+const logger = logs.getLogger("@julianm-lrj/node-instrumentation", "0.1.0");
 
 const requestCount = meter.createCounter("http.server.request.count", {
   description: "Total HTTP server requests"
