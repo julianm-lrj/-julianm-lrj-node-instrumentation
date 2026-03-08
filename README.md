@@ -3,7 +3,7 @@
 Production-focused OpenTelemetry instrumentation helpers for Node services.
 
 ## Features
-- Node `>=24.14.0` policy-aligned configuration.
+- Node `>=20.6.0` policy-aligned configuration.
 - Traces, metrics, and logs with OTLP exporters.
 - Express middleware with request/response telemetry capture.
 - h3 handler wrapper with equivalent telemetry behavior.
@@ -16,6 +16,10 @@ Production-focused OpenTelemetry instrumentation helpers for Node services.
 ```bash
 npm install @julianm-lrj/node-instrumentation
 ```
+
+## Runtime Support
+- Minimum supported Node.js version: `20.6.0`
+- Continuously validated in CI on Node `20.x` and `24.x`
 
 ## Start OpenTelemetry
 
