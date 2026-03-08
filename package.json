@@ -22,7 +22,7 @@
     "licenses:generate": "node licence/generate-third-party-license-report.mjs"
   },
   "engines": {
-    "node": ">=24.14.0"
+    "node": ">=20.6.0"
   },
   "peerDependencies": {
     "express": ">=4",

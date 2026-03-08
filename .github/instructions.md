@@ -4,7 +4,7 @@
 Build an npm package that instruments Node services for production use with high-fidelity OpenTelemetry data while enforcing strong redaction and bounded payload capture.
 
 ## Runtime and Framework Requirements
-- Node.js version: `>=24.14.0`.
+- Node.js version: `>=20.6.0`.
 - Use OpenTelemetry for all three pillars: traces, metrics, and logs.
 - First-class server support: Express and h3.
 - The package must be safe by default in production and configurable via environment variables.
@@ -124,7 +124,7 @@ Expose environment-driven controls at minimum:
 - `INSTRUMENTATION_TRACE_SAMPLING_RATE` (default `1.0` in prod profile)
 
 ## Production Acceptance Checklist
-- [ ] Node minimum version is `>=24.14.0`.
+- [ ] Node minimum version is `>=20.6.0`.
 - [ ] Traces, metrics, and logs are all enabled and correlated.
 - [ ] Express and h3 are supported.
 - [ ] URL path and sanitized query capture are enabled.
