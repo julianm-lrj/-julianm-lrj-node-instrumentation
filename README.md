@@ -145,6 +145,8 @@ app.use(router);
 - `INSTRUMENTATION_INSTALL_SIGNAL_HANDLERS` (`true|false`, default `true`)
 
 ## OTLP TLS Flag
+- Automatic disable: if a trace/metric/log OTLP URL is missing (or rejected by TLS policy), export for that signal is skipped automatically.
+- Per-signal behavior: you can configure only `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT`, `OTEL_EXPORTER_OTLP_METRICS_ENDPOINT`, or `OTEL_EXPORTER_OTLP_LOGS_ENDPOINT`; unconfigured signals remain disabled.
 - Secure by default: TLS is enforced unless explicitly disabled.
 - Runtime flag: start with `--allow-insecure-otlp` to allow `http://` OTLP exporter URLs.
 - Programmatic override: `startTelemetry({ requireOtlpTls: false })`.

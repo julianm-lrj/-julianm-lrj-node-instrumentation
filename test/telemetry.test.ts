@@ -14,6 +14,79 @@ test("startTelemetry shutdown is idempotent", async () => {
   await Promise.all([runtime.shutdown(), runtime.shutdown()]);
 });
 
+test("startTelemetry auto-disables all signals when no OTLP endpoints are configured", async () => {
+  const infos: string[] = [];
+  const warnings: string[] = [];
+
+  const originalInfo = console.info;
+  const originalWarn = console.warn;
+
+  console.info = (...args: unknown[]) => {
+    infos.push(args.map((value) => String(value)).join(" "));
+  };
+
+  console.warn = (...args: unknown[]) => {
+    warnings.push(args.map((value) => String(value)).join(" "));
+  };
+
+  try {
+    const runtime = startTelemetry({
+      installSignalHandlers: false,
+      otlpEndpoint: "",
+      otlpTracesEndpoint: "",
+      otlpMetricsEndpoint: "",
+      otlpLogsEndpoint: ""
+    });
+
+    await runtime.shutdown();
+  } finally {
+    console.info = originalInfo;
+    console.warn = originalWarn;
+  }
+
+  const disableMessage = infos.find((line) =>
+    line.includes("OTLP export disabled for signals without a valid endpoint")
+  );
+
+  assert.ok(disableMessage);
+  assert.equal(disableMessage.includes("trace"), true);
+  assert.equal(disableMessage.includes("metric"), true);
+  assert.equal(disableMessage.includes("log"), true);
+  assert.equal(warnings.some((line) => line.includes("OTLP endpoint is not TLS")), false);
+});
+
+test("startTelemetry auto-disables only missing OTLP signal endpoints", async () => {
+  const infos: string[] = [];
+  const originalInfo = console.info;
+
+  console.info = (...args: unknown[]) => {
+    infos.push(args.map((value) => String(value)).join(" "));
+  };
+
+  try {
+    const runtime = startTelemetry({
+      installSignalHandlers: false,
+      otlpEndpoint: "",
+      otlpTracesEndpoint: "https://collector.example.test/v1/traces",
+      otlpMetricsEndpoint: "",
+      otlpLogsEndpoint: ""
+    });
+
+    await runtime.shutdown();
+  } finally {
+    console.info = originalInfo;
+  }
+
+  const disableMessage = infos.find((line) =>
+    line.includes("OTLP export disabled for signals without a valid endpoint")
+  );
+
+  assert.ok(disableMessage);
+  assert.equal(disableMessage.includes("trace"), false);
+  assert.equal(disableMessage.includes("metric"), true);
+  assert.equal(disableMessage.includes("log"), true);
+});
+
 test("startTelemetry warns when insecure OTLP URL is used with TLS requirement", async () => {
   const warnings: string[] = [];
   const originalWarn = console.warn;
