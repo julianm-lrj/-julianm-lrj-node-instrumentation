@@ -34,16 +34,6 @@ coverage
 *.local
 *.env.*
 *.local.*
-*.config.js
-*.config.ts
-*.config.json
-*.config.yaml
-*.config.yml
-*.config.xml
-*.config.ini
-*.config.env
-*.config.local
-*.config.*
 *.log
 *.log.*
 *.pid
