@@ -62,3 +62,31 @@ test("resolveConfig honors npm_package_version over package.json fallback", () =
   const config = resolveConfig({}, { npm_package_version: "9.9.9" });
   assert.equal(config.serviceVersion, "9.9.9");
 });
+
+test("resolveConfig parses OTLP headers and insecure OTLP env toggle", () => {
+  const config = resolveConfig(
+    {},
+    {
+      INSTRUMENTATION_ALLOW_INSECURE_OTLP: "true",
+      OTEL_EXPORTER_OTLP_HEADERS: "x-api-key=abc123, malformed, empty=, tenant=acme"
+    }
+  );
+
+  assert.equal(config.requireOtlpTls, false);
+  assert.deepEqual(config.otlpHeaders, {
+    "x-api-key": "abc123",
+    tenant: "acme"
+  });
+});
+
+test("resolveConfig parses redaction patterns from env regex and literals", () => {
+  const config = resolveConfig(
+    {},
+    {
+      INSTRUMENTATION_REDACTION_PATTERNS: "/foo.*/i,custom.secret"
+    }
+  );
+
+  assert.equal(config.redactionPatterns.some((pattern) => pattern.test("foo-token")), true);
+  assert.equal(config.redactionPatterns.some((pattern) => pattern.test("custom.secret")), true);
+});
