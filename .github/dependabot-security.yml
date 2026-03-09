@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    # Security-focused settings
+    versioning-strategy: increase-if-necessary
+    labels:
+      - "security"
+      - "dependencies"
+    commit-message:
+      prefix: "security"
+      include: "scope"
