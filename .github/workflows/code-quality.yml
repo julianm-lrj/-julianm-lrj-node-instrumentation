@@ -7,6 +7,9 @@ on:
       - master
       - develop
 
+permissions:
+  contents: read
+
 jobs:
   code-quality:
     runs-on: ubuntu-latest
