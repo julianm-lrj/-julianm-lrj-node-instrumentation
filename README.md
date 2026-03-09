@@ -21,6 +21,12 @@ npm install @julianm-lrj/node-instrumentation
 - Minimum supported Node.js version: `20.6.0`
 - Continuously validated in CI on Node `20.x` and `24.x`
 
+## Quality Gates
+- `npm run lint`
+- `npm run typecheck`
+- `npm test`
+- `npm run test:coverage` (fails below `90%` line coverage and writes `coverage/lcov.info`)
+
 ## Start OpenTelemetry
 
 ```ts

@@ -18,7 +18,10 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "tsx --test test/*.test.ts",
+    "test:coverage": "c8 --reporter=text-summary --reporter=lcov --check-coverage --lines 90 tsx --test test/*.test.ts",
     "licenses:generate": "node licence/generate-third-party-license-report.mjs"
   },
   "engines": {
@@ -51,7 +54,12 @@
     "@opentelemetry/sdk-trace-node": "latest"
   },
   "devDependencies": {
+    "@eslint/js": "latest",
     "@types/express": "latest",
+    "c8": "latest",
+    "eslint": "latest",
+    "globals": "latest",
+    "typescript-eslint": "latest",
     "typescript": "latest",
     "tsx": "latest"
   }
