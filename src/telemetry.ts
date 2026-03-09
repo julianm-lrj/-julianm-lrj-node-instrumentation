@@ -97,45 +97,46 @@ export function startTelemetry(overrides: Partial<InstrumentationConfig> = {}): 
   const config = resolveConfig(overrides);
   const resource = resourceFromConfig(config);
 
-  const traceExporter = new OTLPTraceExporter(
-    otlpConfig(
-      enforceTls(
-        otlpUrl(config.otlpTracesEndpoint, config.otlpEndpoint, "/v1/traces"),
-        config,
-        "trace"
-      ),
-      config
-    )
+  const traceUrl = enforceTls(
+    otlpUrl(config.otlpTracesEndpoint, config.otlpEndpoint, "/v1/traces"),
+    config,
+    "trace"
+  );
+  const metricUrl = enforceTls(
+    otlpUrl(config.otlpMetricsEndpoint, config.otlpEndpoint, "/v1/metrics"),
+    config,
+    "metric"
+  );
+  const logUrl = enforceTls(
+    otlpUrl(config.otlpLogsEndpoint, config.otlpEndpoint, "/v1/logs"),
+    config,
+    "log"
   );
 
-  const metricExporter = new OTLPMetricExporter(
-    otlpConfig(
-      enforceTls(
-        otlpUrl(config.otlpMetricsEndpoint, config.otlpEndpoint, "/v1/metrics"),
-        config,
-        "metric"
-      ),
-      config
-    )
-  );
+  const disabledSignals = [
+    traceUrl == null ? "trace" : undefined,
+    metricUrl == null ? "metric" : undefined,
+    logUrl == null ? "log" : undefined
+  ].filter((signal): signal is string => signal != null);
 
-  const logExporter = new OTLPLogExporter(
-    otlpConfig(
-      enforceTls(
-        otlpUrl(config.otlpLogsEndpoint, config.otlpEndpoint, "/v1/logs"),
-        config,
-        "log"
-      ),
-      config
-    )
-  );
+  if (disabledSignals.length > 0) {
+    console.info(
+      `[node-instrumentation] OTLP export disabled for signals without a valid endpoint: ${disabledSignals.join(", ")}`
+    );
+  }
+
+  const spanProcessors: BatchSpanProcessor[] = [];
+  if (traceUrl) {
+    const traceExporter = new OTLPTraceExporter(otlpConfig(traceUrl, config));
+    spanProcessors.push(new BatchSpanProcessor(traceExporter));
+  }
 
   const tracerProvider = new NodeTracerProvider({
     resource,
     sampler: new ParentBasedSampler({
       root: new TraceIdRatioBasedSampler(config.traceSamplingRate)
     }),
-    spanProcessors: [new BatchSpanProcessor(traceExporter)]
+    spanProcessors
   });
 
   tracerProvider.register({
@@ -145,20 +146,32 @@ export function startTelemetry(overrides: Partial<InstrumentationConfig> = {}): 
     })
   });
 
-  const metricReader = new PeriodicExportingMetricReader({
-    exporter: metricExporter,
-    exportIntervalMillis: config.metricExportIntervalMillis
-  });
+  const metricReaders: PeriodicExportingMetricReader[] = [];
+  if (metricUrl) {
+    const metricExporter = new OTLPMetricExporter(otlpConfig(metricUrl, config));
+    metricReaders.push(
+      new PeriodicExportingMetricReader({
+        exporter: metricExporter,
+        exportIntervalMillis: config.metricExportIntervalMillis
+      })
+    );
+  }
 
   const meterProvider = new MeterProvider({
     resource,
-    readers: [metricReader]
+    readers: metricReaders
   });
   metrics.setGlobalMeterProvider(meterProvider);
 
+  const logProcessors: BatchLogRecordProcessor[] = [];
+  if (logUrl) {
+    const logExporter = new OTLPLogExporter(otlpConfig(logUrl, config));
+    logProcessors.push(new BatchLogRecordProcessor(logExporter));
+  }
+
   const loggerProvider = new LoggerProvider({
     resource,
-    processors: [new BatchLogRecordProcessor(logExporter)]
+    processors: logProcessors
   });
   logs.setGlobalLoggerProvider(loggerProvider);
 
