@@ -18,8 +18,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "lint": "eslint \"{src,test}/*.ts\"",
-    "lint:fix": "eslint \"{src,test}/*.ts\" --fix",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "tsx --test test/*.test.ts",
     "test:coverage": "c8 --all --include=src/*.ts --exclude=dist/**,coverage/**,node_modules/** --reporter=text-summary --reporter=lcov --check-coverage --lines 90 --branches 80 --functions 95 --statements 90 --skip-full tsx --test test/*.test.ts",
     "licenses:generate": "node licence/generate-third-party-license-report.mjs"
