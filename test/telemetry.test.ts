@@ -55,7 +55,7 @@ test("startTelemetry auto-disables all signals when no OTLP endpoints are config
   assert.equal(warnings.some((line) => line.includes("OTLP endpoint is not TLS")), false);
 });
 
-test("startTelemetry auto-disables only missing OTLP signal endpoints", async () => {
+test("startTelemetry does not log when only a subset of OTLP signal endpoints are missing", async () => {
   const infos: string[] = [];
   const originalInfo = console.info;
 
@@ -81,10 +81,7 @@ test("startTelemetry auto-disables only missing OTLP signal endpoints", async ()
     line.includes("OTLP export disabled for signals without a valid endpoint")
   );
 
-  assert.ok(disableMessage);
-  assert.equal(disableMessage.includes("trace"), false);
-  assert.equal(disableMessage.includes("metric"), true);
-  assert.equal(disableMessage.includes("log"), true);
+  assert.equal(disableMessage, undefined);
 });
 
 test("startTelemetry warns when insecure OTLP URL is used with TLS requirement", async () => {
