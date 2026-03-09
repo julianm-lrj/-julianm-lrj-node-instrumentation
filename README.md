@@ -42,6 +42,42 @@ const telemetry = startTelemetry({
 await telemetry.shutdown();
 ```
 
+## startTelemetry Config Type
+`startTelemetry` accepts `overrides?: Partial<InstrumentationConfig>`.
+
+All fields are optional. Resolution order is: explicit overrides -> environment variables -> built-in defaults.
+
+```ts
+type StartTelemetryConfig = Partial<{
+  serviceName: string;
+  serviceVersion: string;
+  deploymentEnvironment: string;
+  captureHeaders: boolean;
+  captureRequestBody: boolean;
+  captureResponseBody: boolean;
+  allowedBodyTypes: string[];
+  deniedHeaders: string[];
+  redactionPatterns: RegExp[];
+  maxUrlBytes: number;
+  maxHeaderValueBytes: number;
+  maxRequestBodyBytes: number;
+  maxResponseBodyBytes: number;
+  traceSamplingRate: number;
+  excludedPaths: string[];
+  otlpEndpoint: string | undefined;
+  otlpTracesEndpoint: string | undefined;
+  otlpMetricsEndpoint: string | undefined;
+  otlpLogsEndpoint: string | undefined;
+  otlpHeaders: Record<string, string>;
+  otlpTimeoutMillis: number;
+  metricExportIntervalMillis: number;
+  requireOtlpTls: boolean;
+  installSignalHandlers: boolean;
+}>;
+```
+
+Practical requirement: set `serviceName` for clear service identity in observability backends.
+
 ## Express Usage
 
 ```ts
@@ -82,25 +118,31 @@ app.use(router);
 ```
 
 ## Environment Variables
+- `OTEL_SERVICE_NAME` (default `node-instrumentation`)
+- `OTEL_SERVICE_VERSION` (default `npm_package_version`; then nearest `package.json` `version`; then `0.0.0`)
+- `OTEL_DEPLOYMENT_ENVIRONMENT` (default `NODE_ENV`; then `production`)
 - `INSTRUMENTATION_CAPTURE_HEADERS` (`true|false`, default `true`)
 - `INSTRUMENTATION_CAPTURE_REQUEST_BODY` (`true|false`, default `true`)
 - `INSTRUMENTATION_CAPTURE_RESPONSE_BODY` (`true|false`, default `false`)
-- `INSTRUMENTATION_ALLOWED_BODY_TYPES`
-- `INSTRUMENTATION_DENIED_HEADERS`
-- `INSTRUMENTATION_REDACTION_PATTERNS`
-- `INSTRUMENTATION_MAX_URL_BYTES`
-- `INSTRUMENTATION_MAX_HEADER_VALUE_BYTES`
-- `INSTRUMENTATION_MAX_REQUEST_BODY_BYTES`
-- `INSTRUMENTATION_MAX_RESPONSE_BODY_BYTES`
+- `INSTRUMENTATION_ALLOWED_BODY_TYPES` (CSV, default `application/json,application/x-www-form-urlencoded`)
+- `INSTRUMENTATION_DENIED_HEADERS` (CSV, default `authorization,proxy-authorization,cookie,set-cookie,x-api-key,x-auth-token,x-access-token,x-session-id,*token*,*secret*,*password*`)
+- `INSTRUMENTATION_REDACTION_PATTERNS` (CSV regex/literals, default built-in sensitive key patterns)
+- `INSTRUMENTATION_MAX_URL_BYTES` (default `2048`, min `128`)
+- `INSTRUMENTATION_MAX_HEADER_VALUE_BYTES` (default `1024`, min `64`)
+- `INSTRUMENTATION_MAX_REQUEST_BODY_BYTES` (default `8192`, min `256`)
+- `INSTRUMENTATION_MAX_RESPONSE_BODY_BYTES` (default `4096`, min `256`)
 - `INSTRUMENTATION_TRACE_SAMPLING_RATE` (`0.0-1.0`, default `1.0`)
+- `INSTRUMENTATION_EXCLUDED_PATHS` (CSV, default `/health,/ready,/metrics`)
 - `INSTRUMENTATION_REQUIRE_OTLP_TLS` (`true|false`, default `true`)
 - `INSTRUMENTATION_ALLOW_INSECURE_OTLP` (`true|false`, default `false`)
 - `OTEL_EXPORTER_OTLP_ENDPOINT`
 - `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT`
 - `OTEL_EXPORTER_OTLP_METRICS_ENDPOINT`
 - `OTEL_EXPORTER_OTLP_LOGS_ENDPOINT`
-- `OTEL_EXPORTER_OTLP_HEADERS`
-- `OTEL_EXPORTER_OTLP_TIMEOUT`
+- `OTEL_EXPORTER_OTLP_HEADERS` (CSV `key=value` pairs, default empty)
+- `OTEL_EXPORTER_OTLP_TIMEOUT` (milliseconds, default `10000`, min `1000`)
+- `INSTRUMENTATION_METRIC_EXPORT_INTERVAL_MS` (milliseconds, default `10000`, min `1000`)
+- `INSTRUMENTATION_INSTALL_SIGNAL_HANDLERS` (`true|false`, default `true`)
 
 ## OTLP TLS Flag
 - Secure by default: TLS is enforced unless explicitly disabled.
