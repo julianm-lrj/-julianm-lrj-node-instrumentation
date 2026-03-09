@@ -2,6 +2,13 @@
 
 Production-focused OpenTelemetry instrumentation helpers for Node services.
 
+[![CI](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/ci.yml/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/ci.yml) 
+[![Code Quality](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/code-quality.yml/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/code-quality.yml)
+[![CodeQL Advanced](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/codeql.yml/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/codeql.yml)
+[![Dependabot Updates](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/dependabot/dependabot-updates)
+[![Publish to npm](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/publish.yml/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/publish.yml)
+[![Security Review](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/security-review.yml/badge.svg)](https://github.com/julianm-lrj/-julianm-lrj-node-instrumentation/actions/workflows/security-review.yml)
+
 ## Features
 - Node `>=20.6.0` policy-aligned configuration.
 - Traces, metrics, and logs with OTLP exporters.
