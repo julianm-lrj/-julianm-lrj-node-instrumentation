@@ -12,7 +12,7 @@ Production-focused OpenTelemetry instrumentation helpers for Node services.
 - `service.version` defaults to the nearest `package.json` version (or env overrides).
 
 ## Install
-
+ 
 ```bash
 npm install @julianm-lrj/node-instrumentation
 ```
