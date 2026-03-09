@@ -119,7 +119,7 @@ export function startTelemetry(overrides: Partial<InstrumentationConfig> = {}): 
     logUrl == null ? "log" : undefined
   ].filter((signal): signal is string => signal != null);
 
-  if (disabledSignals.length > 0) {
+  if (disabledSignals.length === 3) {
     console.info(
       `[node-instrumentation] OTLP export disabled for signals without a valid endpoint: ${disabledSignals.join(", ")}`
     );
