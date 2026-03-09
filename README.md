@@ -25,7 +25,7 @@ npm install @julianm-lrj/node-instrumentation
 - `npm run lint`
 - `npm run typecheck`
 - `npm test`
-- `npm run test:coverage` (fails below `90%` line coverage and writes `coverage/lcov.info`)
+- `npm run test:coverage` (full `src/**/*.ts` coverage; fails below `90%` lines/statements, `80%` branches, `95%` functions, and writes `coverage/lcov.info`)
 
 ## Start OpenTelemetry
 

@@ -1,6 +1,6 @@
 {
   "name": "@julianm-lrj/node-instrumentation",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Production-focused OpenTelemetry instrumentation helpers for Node, Express, and h3.",
   "license": "AGPL-3.0-only",
   "type": "module",
@@ -21,7 +21,7 @@
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "tsx --test test/*.test.ts",
-    "test:coverage": "c8 --reporter=text-summary --reporter=lcov --check-coverage --lines 90 tsx --test test/*.test.ts",
+    "test:coverage": "c8 --all --include=src/*.ts --exclude=dist/**,coverage/**,node_modules/** --reporter=text-summary --reporter=lcov --check-coverage --lines 90 --branches 80 --functions 95 --statements 90 --skip-full tsx --test test/*.test.ts",
     "licenses:generate": "node licence/generate-third-party-license-report.mjs"
   },
   "engines": {
@@ -58,7 +58,9 @@
     "@types/express": "latest",
     "c8": "latest",
     "eslint": "latest",
+    "express": "latest",
     "globals": "latest",
+    "h3": "latest",
     "typescript-eslint": "latest",
     "typescript": "latest",
     "tsx": "latest"
