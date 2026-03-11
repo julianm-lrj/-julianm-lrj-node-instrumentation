@@ -1,26 +1,36 @@
 {
   "name": "@julianm-lrj/node-instrumentation",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Production-focused OpenTelemetry instrumentation helpers for Node, Express, and h3.",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsup",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "tsx --test test/*.test.ts",
+    "test:esm": "node test/import-esm.test.mjs",
+    "test:cjs": "node test/require-cjs.test.cjs",
+    "test:formats": "npm run build && npm run test:esm && npm run test:cjs",
     "test:coverage": "c8 --all --include=src/*.ts --exclude=dist/**,coverage/**,node_modules/** --reporter=text-summary --reporter=lcov --check-coverage --lines 90 --branches 80 --functions 95 --statements 90 --skip-full tsx --test test/*.test.ts",
     "licenses:generate": "node licence/generate-third-party-license-report.mjs"
   },
@@ -61,8 +71,9 @@
     "express": "latest",
     "globals": "latest",
     "h3": "latest",
-    "typescript-eslint": "latest",
+    "tsup": "^8.5.1",
+    "tsx": "latest",
     "typescript": "latest",
-    "tsx": "latest"
+    "typescript-eslint": "latest"
   }
 }
