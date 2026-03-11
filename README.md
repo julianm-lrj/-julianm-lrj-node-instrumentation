@@ -24,6 +24,22 @@ Production-focused OpenTelemetry instrumentation helpers for Node services.
 npm install @julianm-lrj/node-instrumentation
 ```
 
+## Module System Support
+
+This package supports both ESM and CommonJS natively — no dynamic import workarounds required.
+
+### ESM (ECMAScript Modules)
+
+```typescript
+import { startTelemetry, createExpressInstrumentationMiddleware } from '@julianm-lrj/node-instrumentation';
+```
+
+### CommonJS
+
+```javascript
+const { startTelemetry, createExpressInstrumentationMiddleware } = require('@julianm-lrj/node-instrumentation');
+```
+
 ## Runtime Support
 - Minimum supported Node.js version: `20.6.0`
 - Continuously validated in CI on Node `20.x` and `24.x`
