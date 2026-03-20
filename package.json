@@ -70,7 +70,7 @@
     "eslint": "latest",
     "express": "latest",
     "globals": "latest",
-    "h3": "latest",
+    "h3": "^2.0.1-rc.17",
     "tsup": "^8.5.1",
     "tsx": "latest",
     "typescript": "latest",
