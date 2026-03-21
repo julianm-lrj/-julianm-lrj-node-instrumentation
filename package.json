@@ -1,6 +1,6 @@
 {
   "name": "@julianm-lrj/node-instrumentation",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Production-focused OpenTelemetry instrumentation helpers for Node, Express, and h3.",
   "license": "AGPL-3.0-only",
   "type": "module",
@@ -70,7 +70,7 @@
     "eslint": "latest",
     "express": "latest",
     "globals": "latest",
-    "h3": "latest",
+    "h3": "^2.0.1-rc.17",
     "tsup": "^8.5.1",
     "tsx": "latest",
     "typescript": "latest",
